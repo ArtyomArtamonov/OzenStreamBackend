@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{A7411CA3-17BE-40EF-8DC6-8E15768F52D6}|">
+  <MonoDevelop.Ide.ItemProperties.ChatApplication PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ChatApplication/Structures/InsertStructure.cs">
+    <Files>
+      <File FileName="ChatApplication/ChatHandler.ashx.cs" Line="33" Column="44" />
+      <File FileName="ChatApplication/Controllers/ChatController.cs" />
+      <File FileName="ChatApplication/MongoDatabase.cs" Line="69" Column="1" />
+      <File FileName="ChatApplication/Controllers/UsersController.cs" />
+      <File FileName="ChatApplication/Structures/InsertStructure.cs" Line="3" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ChatApplication" expanded="True">
+            <Node name="ChatApplication" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Structures" expanded="True">
+                <Node name="InsertStructure.cs" selected="True" />
+              </Node>
+              <Node name="ChatHandler.ashx" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,6 +1,7 @@
 ﻿using System.Threading.Tasks;
 using System.Web.Mvc;
 using Newtonsoft.Json;
+using ChatApplication.Structures;
 
 namespace ChatApplication.Controllers
 {
@@ -39,18 +40,24 @@ namespace ChatApplication.Controllers
             return false;
         }
         [HttpGet]
-        public async Task<bool> Insert(string username, string phone, string password, string key)
+        public async Task<InsertStructure> Insert(string username, string phone, string password, string key)
         {
             if (MongoDatabase.hasAccess(key))
             {
-                if(MongoDatabase.GetByPhone(phone) == null)
-                {
-                    return await MongoDatabase.SaveUser(username: username, phone: phone, password: password);
-                }
-                return false;
+                    if( await MongoDatabase.SaveUser(username: username, phone: phone, password: password))
+                    {
+                        return new InsertStructure
+                        {
+                            status = "200",
+                            response = true
+                        };
+                    }
             }
-                
-            return false;
+            return new InsertStructure
+            {
+                status = "500",
+                response = false
+            };
         }
         [HttpGet]
         public async Task<bool> Remove(string phone, string key)

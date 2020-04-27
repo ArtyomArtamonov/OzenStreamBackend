@@ -80,7 +80,7 @@ namespace ChatApplication
                         document.online.Add(phone);
                         ChatOnlineCollection.DeleteMany(_ => true);
                         ChatOnlineCollection.InsertOne(document);
-                        return false;
+                        return true;
                     }
                 }
                 return false;
